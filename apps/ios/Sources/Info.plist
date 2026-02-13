@@ -23,10 +23,20 @@
 		<key>CFBundleVersion</key>
 		<string>20260213</string>
 		<key>NSAppTransportSecurity</key>
-		<dict>
-		<key>NSAllowsArbitraryLoadsInWebContent</key>
-		<true/>
-	</dict>
+	    <dict>
+    <key>NSAllowsArbitraryLoadsInWebContent</key>
+    <true/>
+      <key>NSExceptionDomains</key>
+      <dict>
+        <key>ubuntu.tailbf9c2b.ts.net</key>
+        <dict>
+          <key>NSExceptionAllowsInsecureHTTPLoads</key>
+          <true/>
+          <key>NSIncludesSubdomains</key>
+          <true/>
+        </dict>
+      </dict>
+    </dict>
 	<key>NSBonjourServices</key>
 	<array>
 		<string>_openclaw-gw._tcp</string>
